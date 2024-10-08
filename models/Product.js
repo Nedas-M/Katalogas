@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Product MongoDB Schema
 const productSchema = new mongoose.Schema ({
     name: {
         type: String,
@@ -8,7 +9,8 @@ const productSchema = new mongoose.Schema ({
     },
     description: {
         type: String,
-        required: true
+        required: true,
+        trim: true
     },
     price: {
         type: Number,
